@@ -1,6 +1,6 @@
 # Step 1 - Install Requirements
 
-These instructions are for setting up Omeka 2.5.1 on Ubuntu 16.04.
+These instructions are for setting up Omeka 2.6 on Ubuntu 16.04.
 
 Before you begin with this guide, you should have a separate, non-root user account with sudo privileges set up on your server. Use this account throughout these instructions.
 
@@ -189,12 +189,12 @@ $ sudo apt-get install imagemagick
 
 # Step 2 - Install & Configure Omeka
 
-Download and install Omeka's **current version** (you can check the current version by going to [Omeka.org](http://omeka.org/download/)). **Do not paste these instructions into your command line without checking that 2.5.1 is indeed the current version!!!!** If it is not the current version, find a link to the zip file of the current version. You should download this file to your home directory:
+Download and install Omeka's **current version** (you can check the current version by going to [Omeka.org](http://omeka.org/download/)). **Do not paste these instructions into your command line without checking that 2.6 is indeed the current version!!!!** If it is not the current version, find a link to the zip file of the current version. You should download this file to your home directory:
 
 ```
 $ cd
-$ wget http://omeka.org/files/omeka-2.5.1.zip
-$ unzip omeka-2.5.1.zip
+$ wget https://github.com/omeka/Omeka/releases/download/v2.6/omeka-2.6.zip
+$ unzip omeka-2.6.zip
 ```
 
 Delete anything that is in the `html` directory (to clear it for omeka):
@@ -206,8 +206,8 @@ $ sudo rm -R /var/www/html/*
 Move the omeka files to your web root:
 
 ```
-$ sudo mv omeka-2.5.1/* /var/www/html/
-$ sudo mv omeka-2.5.1/.htaccess /var/www/html/
+$ sudo mv omeka-2.6/* /var/www/html/
+$ sudo mv omeka-2.6/.htaccess /var/www/html/
 ```
 
 Make the omeka files readable by the internet:
