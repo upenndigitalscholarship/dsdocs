@@ -8,7 +8,7 @@ Before you begin with this guide, you should have a separate, non-root user acco
 
 ```
 $ sudo apt-get update
-$ sudo apt-get apache2
+$ sudo apt-get install apache2
 ```
 Since you are using a sudo command, these operations get executed with root privileges. It will ask you for your password the first time you use `sudo`.
 
@@ -177,7 +177,7 @@ Press `Y` to agree to the rest of the install questions.
 ## Install PHP
 
 ```
-$ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+$ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql php-xml
 ```
 
 ## Install ImageMagick and Unzip
@@ -189,7 +189,7 @@ $ sudo apt-get install imagemagick
 
 # Step 2 - Install & Configure Omeka
 
-Download and install Omeka's **current version** (you can check the current version by going to [Omeka.org](http://omeka.org/download/)). **Do not paste these instructions into your command line without checking that 2.6 is indeed the current version!!!!** If it is not the current version, find a link to the zip file of the current version. You should download this file to your home directory:
+Download and install Omeka's **current version** (you can check the current version by going to [Omeka.org](http://omeka.org/classic/)). **Do not paste these instructions into your command line without checking that 2.6 is indeed the current version!!!!** If it is not the current version, find a link to the zip file of the current version. You should download this file to your home directory:
 
 ```
 $ cd
